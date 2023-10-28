@@ -13,10 +13,10 @@
 .container input {
   background-color: rgba(94, 97, 101, 0.593);
   border-radius: 5px;
-  border: 1px solid #dddddd;
+  border: 1px solid #332b4e;
   outline: none;
   padding: 10px 15px;
-  color: #000;
+  color: white;
 }
 
 .container input:hover {
