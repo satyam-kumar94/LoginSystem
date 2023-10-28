@@ -40,6 +40,9 @@ function Signup() {
         setErrorMsg(err.message);
       });
   };
+  const linkStyle = {
+    textDecoration: 'none',
+  };
 
   return (
     <div className={styles.container}>
@@ -47,7 +50,9 @@ function Signup() {
         <div className={styles.header}>
           <b className={styles.error}>{errorMsg}</b>
           <button onClick={handleSubmission} disabled={submitButtonDisabled}>
-          <Link to="/login">LOGIN</Link>
+          <Link to="/login" style={linkStyle}>
+           LOGIN
+        </Link>
           </button>
         </div>
 
@@ -85,7 +90,7 @@ function Signup() {
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>
           <button onClick={handleSubmission} disabled={submitButtonDisabled}>
-            SIGN IN
+            SIGN UP
           </button>
         </div>
       </div>
