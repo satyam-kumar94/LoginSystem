@@ -26,6 +26,7 @@
 }
 p{
   margin-left: 300px;
+  background-color: #27264c;
 }
 p:hover {
   cursor: pointer;
@@ -45,6 +46,7 @@ p:hover {
   text-align: center;
 }
 
+
 .header button {
   display: block;
   margin-left: auto;
@@ -52,11 +54,11 @@ p:hover {
   outline: none;
   border: none;
   background-color: #20e7e0;
-  color: rgb(166, 9, 9);
+  color: rgb(235, 235, 68);
   border-radius: 5px;
   font-weight: bold;
   font-size: 1rem;
-  padding: 10px 16px;
+  padding: 20px 16px;
   width: 50%;
   transition: 100ms;
   cursor: pointer;
@@ -94,7 +96,7 @@ p:hover {
 
 .footer p {
   font-weight: 700;
-  color: #000;
+  color: #f9f2f2;
 }
 
 
