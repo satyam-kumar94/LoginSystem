@@ -1,3 +1,8 @@
+
+
+
+
+
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -38,14 +43,19 @@ function Login() {
   const handleReset =() =>{
     navigate("/reset");
   }
+  const linkStyle = {
+    textDecoration: 'none',
+  };
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-        {/* <h1 className={styles.heading}>Login</h1> */}
         <div className={styles.header}>
           <b className={styles.error}>{errorMsg}</b>
           <button disabled={submitButtonDisabled} onClick={handleSubmission}>
-          <Link to="/signup">SIGN IN</Link>
+          <Link to="/signup" style={linkStyle}>
+           SIGN IN
+        </Link>
+
           </button>
         </div>
 
